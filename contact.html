@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="hak container-fluid">
+            <a class="navbar-brand" href="index.html">المصري بأخلاقه</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئيسية</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <b>انشطتنا</b>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="khairy.html">الخيري</a></li>
+                            <li><a href="fan.html">فن هادف</a></li>
+                            <li><a href="mirath.html">ميراث للتدريب</a></li>
+                            <li><a href="hamalat.html">الحملات</a></li>
+                        </ul>
+                    </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="contact.html"> تواصل معنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="tabaro3.html"> اتبرع </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <img src="img/logo RGB-01.png" style="width: 250px; height: 150px;" alt="photo">
+
+    </nav>
+
+    <form method="post" action="//submit.form" onSubmit="return validateForm();" class="frm ">
+        <div style="padding-bottom: 18px;font-size : 24px;direction: rtl;">طلب التطوع</div>
+        <div style="padding-bottom: 18px;font-size : 18px;">شكرا لتطوعكم معنا
+        </div>
+        <div style="display: flex; padding-bottom: 18px;max-width : 450px;" class="infrm">
+            <div style=" margin-left: 0; margin-right: 1%; width: 49%;">الاسم الشخصي<br />
+                <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control" />
+            </div>
+            <span></span>
+            <div style=" margin-left: 1%; margin-right: 0; width: 49%;">اسم العائلة<br />
+                <input type="text" id="data_4" name="data_4" style="max-width: 100%;" class="form-control" />
+            </div>
+        </div>
+        <div style="padding-bottom: 18px;" class="infrm">البريد الالكتروني<br />
+            <input type="text" id="data_5" name="data_5" style="max-width : 450px;" class="form-control" />
+        </div>
+        <div style="padding-bottom: 18px;" class="infrm">رقم الهاتف<br />
+            <input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control" />
+        </div>
+        <div style="padding-bottom: 18px;" class="infrm">العنوان<br />
+            <textarea id="data_7" false name="data_7" style="max-width : 450px;" rows="3"
+                class="form-control"></textarea>
+        </div>
+        <div style="padding-bottom: 18px;" class="infrm">موهبتك <br />
+            <input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control" />
+        </div>
+        <div style="padding-bottom: 18px;" class="infrm">ما هو الفريق الذى تريد ان تطوع به<br />
+            <span><input type="checkbox" id="data_8_0" name="data_8" value="Sunday" />الخيري</span><br />
+            <span><input type="checkbox" id="data_8_1" name="data_8" value="Monday" /> فن هادف</span><br />
+            <span><input type="checkbox" id="data_8_2" name="data_8" value="Tuesday" /> ميراث للتدريب</span><br />
+            <span><input type="checkbox" id="data_8_3" name="data_8" value="Wednesday" /> الحملات</span><br />
+        </div>
+
+
+        <div style="padding-bottom: 18px;" class="infrm">ما هي الايام التي يمكن ان تطوع بها<br />
+            <span><input type="checkbox" id="data_8_0" name="data_8" value="Sunday" /> الاحد</span><br />
+            <span><input type="checkbox" id="data_8_1" name="data_8" value="Monday" /> الاثنين</span><br />
+            <span><input type="checkbox" id="data_8_2" name="data_8" value="Tuesday" /> الثلاثاء</span><br />
+            <span><input type="checkbox" id="data_8_3" name="data_8" value="Wednesday" /> الاربعاء</span><br />
+            <span><input type="checkbox" id="data_8_4" name="data_8" value="Thursday" /> الخميس</span><br />
+            <span><input type="checkbox" id="data_8_5" name="data_8" value="Friday" /> الجمعة</span><br />
+            <span><input type="checkbox" id="data_8_6" name="data_8" value="Saturday" /> السبت</span><br />
+        </div>
+
+        <div style="padding-bottom: 18px;" class="infrm">تعليقات/اسئلة<br />
+            <textarea id="data_9" false name="data_9" style="max-width : 450px;" rows="6"
+                class="form-control"></textarea>
+        </div>
+        <div class="modal-footer"> <a href="mailto:elmasry.b.akhlako@gmail.com" class="btn btn-primary">إرسال
+            </a>
+        </div>
+    </form>
+
+    <!-- Footer -->
+    <footer class=" back text-center text-lg-start bg-light text-muted">
+        <section class="ft bg-gray" style=" top: 100px; background-color:#0e395e ; color: white;">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <button type="button" class="btn btn-outline-primary btn-lg openmodal" data-toggle="modal"
+                        data-target="#myModal">Feedback</button>
+                    <div id="myModal" class="modal fade" role="dialog" style="color: black;">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="mt-0">Feedback Request</h3>
+                                    <!--Close/Cross Button--> <button type="button" class="close" data-dismiss="modal"
+                                        style="color: white;">&times;</button>
+                                </div>
+                                <div class="modal-body text-center "> <i
+                                        class="far fa-file-alt fa-4x mb-3 animated rotateIn icon1"></i>
+                                    <h3>رأيك يهمنا </h3>
+                                    <h5>ساعدنا ف تحسين المحتوى<strong><br>أعطنا تقييمك</strong></h5>
+                                    <hr>
+                                    <h6>تقييمك</h6>
+                                </div>
+                                <div class="form-check mb-4"> <input name="feedback" type="radio"> <label
+                                        class="ml-3">محتوى هادف</label> </div>
+                                <div class="form-check mb-4"> <input name="feedback" type="radio"> <label
+                                        class="ml-3">محتوى متوسط</label>
+                                </div>
+                                <div class="form-check mb-4"> <input name="feedback" type="radio"> <label
+                                        class="ml-3">محتوى ضعيف</label> </div>
+                                <div class="text-center">
+                                    <h4>ماهو الذي يمكننا تحسينه ؟</h4>
+                                </div> <textarea type="textarea" placeholder="رسالتك.." rows="3"></textarea>
+                                <div class="modal-footer"> <a href="mailto:elmasry.b.akhlako@gmail.com"
+                                        class="btn btn-primary">إرسال <i class="fa fa-paper-plane"></i>
+                                    </a> <a href="" class="btn btn-outline-primary" data-dismiss="modal">إلغاء</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="margin-top: 50px;">
+                            <i class="fas fa-gem me-3"></i>
+                        </h6>
+                        <p>
+                            مؤسسة المصري بأخلاقه لتنمية المجتمع <br>
+                            المشهرة برقم 3442 لسنة 2017 <br>
+                            مجاورة التامنه عمارة 44 <br>
+                            بنك التنمية والإتمان الزراعي <br>
+                            رقم الحساب 3442
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="margin-top: 50px;">
+                            <b>المصري بأخلاقه</b>
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> العاشر من رمضان</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            <a class="text-reset fw-bold"
+                                href="mailto:elmasry.b.akhlako@gmail.com">elmasry.b.akhlako@gmail.com</a> </p>
+                        <p><i class="fas fa-phone me-3"></i> 01090600340</p>
+                        <p><i class="fas fa-print me-3"></i> 01123581080</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style="clear:both; margin-left:0px">
+        </div>
+
+        <section class="wow fadeIn bg-gray animated"
+            style="visibility: visible; animation-name: fadeIn; background-color: #0e395e;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 center-col text-center">
+                        <a href="https://www.facebook.com/elmasry.b.akhlako/" class="btn social-icon button"
+                            data-abc="true"><i class="fa fa-facebook btn-round"></i></a>
+                        <a href="https://twitter.com/akhlako?s=08" class="btn social-icon button" data-abc="true"><i
+                                class="fa fa-twitter btn-round"></i></a>
+                        <a href="https://www.instagram.com/elmasry_bakhlako/?utm_medium=copy_link"
+                            class="btn social-icon button" data-abc="true">
+                            <i class="fa fa-instagram btn-round"></i></a>
+                        <a href="https://www.youtube.com/channel/UCk09HubBhF2yIQePOzalS5g"
+                            class="btn social-icon button" data-abc="true"><i class="fa fa-youtube btn-round"></i></a>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- Section: Links  -->
+            <div class="text-center p-4" style="background-color:#13314b; color:white;">
+                © 2021 Copyright:
+                <a class="text-reset fw-bold" href="index.html">elmasry</a>
+            </div>
+            </div>
+        </section>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

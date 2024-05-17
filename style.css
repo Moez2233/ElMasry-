@@ -1,0 +1,191 @@
+body {
+
+    text-align: rtl;
+    direction: rtl;
+    background-color: #f2e3d2;
+}
+
+.navbar {
+    background-color: #0e395e;
+
+}
+
+.navbar-brand:hover {
+
+    transform: translateY(-7px);
+    box-shadow: 8px 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 50px;
+
+
+}
+
+.dropdown-menu {
+    background-color: #0e395e;
+
+
+}
+
+.dropdown-menu :hover {
+
+    transform: translateY(-7px);
+    box-shadow: 8px 8px 20px rgba(65, 79, 136, 0.3);
+
+
+}
+
+.dropdown-menu li a {
+    color: white;
+
+}
+
+.nav-link {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.btn-default {
+    background-color: #0e395e;
+    font-size: 25px;
+    color: white;
+
+}
+
+.d-block {
+
+    height: 500px;
+    width: 100%;
+
+}
+
+.firstRow {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    color: white;
+    direction: rtl;
+
+}
+
+.firstRow__img {
+    height: 400px;
+    width: 40%;
+
+}
+
+.firstRow__content {
+    margin-top: 70px;
+    font-size: 24px;
+}
+
+blockquote {
+    direction: rtl;
+}
+
+.img-fluid {
+
+    margin-top: 70px;
+    margin-left: 10%;
+    height: 400px;
+    width: 70%;
+
+}
+
+.text-white {
+    font-size: x-large;
+    direction: rtl;
+    color: rgb(255, 255, 255);
+
+}
+
+.frm {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 450px;
+    margin-right: 400px;
+    border: solid black 1px;
+    direction: rtl;
+    text-align: right;
+}
+
+.frm .infrm {
+    margin-right: 100px;
+}
+
+
+.social-icon .fa {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px !important;
+    line-height: 1;
+    font-size: 14px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    color: #fff;
+
+}
+
+
+
+.social-icon .fa-facebook {
+    background-color: #3b5998
+}
+
+.social-icon .fa-twitter {
+    background-color: #00aced
+}
+
+.social-icon .fa-youtube {
+    background-color: #bb0000
+}
+
+.social-icon .fa-instagram {
+    background-color: #517fa4
+}
+
+.social-icon-large {
+    margin-right: 20px
+}
+
+.social-icon-large:hover .fa-facebook {
+    background-color: #3b5998
+}
+
+.social-icon-large:hover .fa-twitter {
+    background-color: #00aced
+}
+
+
+.social-icon-large:hover .fa-youtube {
+    background-color: #bb0000
+}
+
+
+
+.social-icon-large:hover .fa-instagram {
+    background-color: #517fa4
+}
+
+.btn-round {
+    border-radius: 4px !important
+}
+
+.btn.btn-large i {
+    font-size: 24px
+}
+
+footer {
+    background-color: #0e395e;
+}
+
+.cz_gap {
+    text-align: rtl;
+    direction: rtl;
+}
+
+@media(max-width:1200px) {}
